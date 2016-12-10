@@ -28,6 +28,16 @@ My custom styles at the top and the edited template styles are after the second
   background: white;
   border: solid 2px white;
 }
+.btn1 {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  width: 130px;
+  height: 130px;
+  border-radius: 65px;
+  background-color: #2C3E50;
+  margin-bottom: 3em;
+}
 
 /*!
  * Start Bootstrap - Freelancer v3.3.7+1 (http://startbootstrap.com/template-overviews/freelancer)
