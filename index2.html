@@ -12,16 +12,23 @@
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href = "css/animate.css" rel = "stylesheet"> 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src = "js/jquery.fittext.js"></script>
+    <script type="text/javascript" src = "js/jquery.lettering.js"></script>
+    <script type="text/javascript" src = "js/jquery.textillate.js"></script>
+    
+
 
 
     <title>Eric Tweedle ePortfolio</title>
 
 </head>
 <body>
-	<div class = "navbar navbar-fixed-top" style = "margin-bottom: 0px; background-color: #fff; margin-left: 0px;">
+	<div class = "navbar navbar-fixed-top" style = "margin-bottom: 0px; background-color: #eee; margin-left: 0px; opacity: .9;" id="navbar" >
 		<div class = "container">
 		
-			<a href = "#intro" class = "navbar-brand" style="color: #000"> Eric Tweedle </a>
+			<a href = "#intro" class = "navbar-brand" style="color: #000">Eric Tweedle</a>
 			
 			<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
 				<span class = "icon-bar"></span>
@@ -42,6 +49,11 @@
 			
 		</div>
 	</div>
+    <script type="text/javascript">
+        $(function () {
+            $('.tlt').textillate();
+        })
+    </script>
 
     <header style ="background-color: #000000; margin-top: 0; background-image: url('img/Background.jpg'); background-repeat: no-repeat; background-size: 100% 100%;">
         <div class="container" id = "intro" style="color: #fff;">
@@ -49,7 +61,7 @@
                 <div class="col-lg-12">
                     <img class="img-responsive" src="img/profile.jpg" alt="" style="border-radius: 200px;">
                     <div class="intro-text">
-                        <span class="name">Eric Tweedle</span>
+                        <h1 class="tlt" style="font-size: 50px;">Eric Tweedle</h1>
                         <hr class="star-light">
                         <span class="skills">Mechatronics Engineering, University of Waterloo</span>
                         <ul class="list-inline">
@@ -136,7 +148,7 @@
                 </div>
 
                 <p class=MsoNormal><span lang=EN-US>4512 Ivy Gardens, <span class=SpellE>Beamsville</span>,
-                On, L0R 1B5&nbsp;|&nbsp;289-686-2226&nbsp;|&nbsp;Emtweedle@uwaterloo.ca | website<o:p></o:p></span></p>
+                On, L0R 1B5&nbsp;|&nbsp;289-686-2226&nbsp;|&nbsp;Emtweedle@uwaterloo.ca | erictweeds.github.io<o:p></o:p></span></p>
 
                 <h1><span lang=EN-US>Summary<o:p></o:p></span></h1>
 
