@@ -17,11 +17,24 @@
     <script type="text/javascript" src = "js/jquery.fittext.js"></script>
     <script type="text/javascript" src = "js/jquery.lettering.js"></script>
     <script type="text/javascript" src = "js/jquery.textillate.js"></script>
-    
-
-
 
     <title>Eric Tweedle ePortfolio</title>
+
+    <script type="text/javascript">
+        function change(){
+            document.getElementById("Name").innerHTML = "Tweedle";
+        }
+    </script>
+    <script src="js/typed.js"></script>
+    <script>
+    $(function(){
+        $("#typed").typed({
+            strings: ["Tweedle Dee", "Tweedle Dum", "Eric Tweedle"],
+            typeSpeed: 30
+        });
+    });
+</script>
+
 
 </head>
 <body>
@@ -38,11 +51,11 @@
 			
 			<div class = "collapse navbar-collapse navHeaderCollapse">
 			
-				<ul class = "nav navbar-nav navbar-right">		
+				<ul class = "nav navbar-nav">		
 					<li><a href = "#Projects" style="color: #000">Projects</a></li>
 					<li><a href = "#Resume" style="color: #000">Resume</a></li>
-					<li><a href = "" style="color: #000">Some Fun</a></li>
-					<li><a href = "" style="color: #000">Contact</a></li>
+					<li><a href = "#FunStuff" style="color: #000">Fun Stuff</a></li>
+					<li><a href = "#Contact" style="color: #000">Contact</a></li>
 				</ul>
 			
 			</div>
@@ -61,7 +74,7 @@
                 <div class="col-lg-12">
                     <img class="img-responsive" src="img/profile.jpg" alt="" style="border-radius: 200px;">
                     <div class="intro-text">
-                        <h1 class="tlt" style="font-size: 50px;">Eric Tweedle</h1>
+                        <span id="typed" style="font-size: 50px"></span>
                         <hr class="star-light">
                         <span class="skills">Mechatronics Engineering, University of Waterloo</span>
                         <ul class="list-inline">
@@ -243,7 +256,7 @@
                 lang=EN-US style='font-family:"Cambria",serif;mso-fareast-font-family:Cambria;
                 mso-bidi-font-family:Cambria'><span style='mso-list:Ignore'>·<span
                 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
-                lang=EN-US>Large amount of analysis into wireless router functionality<o:p></o:p></span></p>
+                lang=EN-US>Large amount of research and analysis into wireless router functionality<o:p></o:p></span></p>
 
                 <h3><span lang=EN-US>project coordinator&nbsp;|&nbsp;avnan electro&nbsp;|&nbsp;january
                 – april, 2016<o:p></o:p></span></h3>
@@ -298,4 +311,10 @@
             </form>
         </div>
     </div>
+    <div class="container" id="FunStuff">
+        <h1> Morgan is the greatest :D/h1>
+    </div>
+    <div class="container" id="Contact" style="background-color: #1976D2; margin-left: 0px; margin-right: 0px; width: 100%; color: #fff;">
+        <h1 style="text-align: center;">Contact Info</h1> 
+    <div class="container">
 </body>
