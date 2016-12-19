@@ -19,12 +19,6 @@
     <script type="text/javascript" src = "js/jquery.textillate.js"></script>
 
     <title>Eric Tweedle ePortfolio</title>
-
-    <script type="text/javascript">
-        function change(){
-            document.getElementById("Name").innerHTML = "Tweedle";
-        }
-    </script>
     <script src="js/typed.js"></script>
     <script>
     $(function(){
@@ -43,21 +37,19 @@
 		
 			<a href = "#intro" class = "navbar-brand" style="color: #000">Eric Tweedle</a>
 			
-			<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+			<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
 				<span class = "icon-bar"></span>
 				<span class = "icon-bar"></span>
 				<span class = "icon-bar"></span>
 			</button>
 			
 			<div class = "collapse navbar-collapse navHeaderCollapse">
-			
 				<ul class = "nav navbar-nav">		
 					<li><a href = "#Projects" style="color: #000">Projects</a></li>
 					<li><a href = "#Resume" style="color: #000">Resume</a></li>
 					<li><a href = "#FunStuff" style="color: #000">Fun Stuff</a></li>
-					<li><a href = "#Contact" style="color: #000">Contact</a></li>
 				</ul>
-			
 			</div>
 			
 		</div>
@@ -137,7 +129,7 @@
     <div class="container" id="Resume" style="background-color: #1976D2; margin-left: 0px; margin-right: 0px; width: 100%; color: #fff;">
         <h1 style="text-align: center;"> Resume</h1> 
         <div class="container">
-                    <!-- HTML of Resume converted from .Doc -->
+            <!-- HTML of Resume converted from .Doc -->
            <body lang=EN-CA link="#2E74B5" vlink="#954F72" style='tab-interval:36.0pt'>
 
                 <div class=WordSection1>
@@ -210,14 +202,13 @@
                 <p class=MsoListBulletCxSpLast style='text-indent:0cm;mso-list:none;tab-stops:
                 36.0pt'><span lang=EN-US>determine the best choice based on personality. <o:p></o:p></span></p>
 
-                <h3><span lang=EN-US>Fantasy hockey pool |&nbsp;november 2016 – present<o:p></o:p></span></h3>
+                <h3><span lang=EN-US>Customizable Sound Board App |&nbsp;november 2016 – present<o:p></o:p></span></h3>
 
                 <p class=MsoListBullet style='mso-list:l0 level1 lfo1'><![if !supportLists]><span
                 lang=EN-US style='font-family:"Cambria",serif;mso-fareast-font-family:Cambria;
                 mso-bidi-font-family:Cambria'><span style='mso-list:Ignore'>·<span
                 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
-                lang=EN-US>A combination of a mobile app and web application that creates a
-                functioning fantasy hockey pool<o:p></o:p></span></p>
+                lang=EN-US>An android app that allows user to enter their own sounds that will be played when a button is pressed<o:p></o:p></span></p>
 
                 <w:Sdt ShowingPlcHdr="t" Temporary="t"
                  DocPart="F81D7728FCF745D88F1BB9D95F9EE353" Title="Experience:"
@@ -305,11 +296,16 @@
             </a>
         </div>
     </div>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#test").load("https://en.wikipedia.org/wiki/Normandy_landings #a");
+            });
+        });
+    </script>
     <div class="container" id="FunStuff">
-        <h1> Hello World </h1>
-    </div>
-    <div class="container" id="Contact" style="background-color: #1976D2; margin-left: 0px; margin-right: 0px; width: 100%; color: #fff;">
-        <h1 style="text-align: center;">Contact Info</h1>
+        <h1 id="test"> Hello World </h1>
+        <button>click</button>
     </div>
 </body>
 <footer class="text-center" style="margin-left: 0px; margin-right: 0px; width: 100%;" >
